@@ -3,7 +3,7 @@
 我用來傳到手機的MQTT Client，就可馬上登入PTT回覆信箱
 
 #使用說明
-bsPTT.py說明<br />
+##bsPTT.py說明<br />
 ```python
 #MQTT Broker<br />
 MQTT_BROKER = ""<br />
@@ -15,9 +15,11 @@ PTTBOARD_URL = "https://www.ptt.cc/bbs/HardwareSale/index.html"<br />
 GetURL(PTTBOARD_URL, 5, itemList, matchItems)  
 ```
 
-items.json說明
-    //輸入要收尋的品名<br />
+##items.json說明<br />
+check_str為要搜尋的品項<br />
+type為買賣類別<br />
     "check_str": ["i3", "I3"]<br />
-    //買賣類別<br />
     "type": "賣"<br />
+    
+
 

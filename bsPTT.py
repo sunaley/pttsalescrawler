@@ -45,8 +45,9 @@ def GetURL(URL, i, itemList, data):
     time.sleep(1)
     GetURL(URL,i,itemList,data)
 
-MQTT_BROKER = "54.85.158.111"
-MQTT_TOPIC = "ptt/hardwaresale"
+MQTT_BROKER = ""
+MQTT_TOPIC = ""
+PTTBOARD_URL = "https://www.ptt.cc/bbs/HardwareSale/index.html"
 
 if __name__ == '__main__':
     
@@ -60,7 +61,7 @@ if __name__ == '__main__':
 
     while True:
         #get item
-        GetURL("https://www.ptt.cc/bbs/HardwareSale/index.html", 5, itemList, matchItems)  
+        GetURL(PTTBOARD_URL, 5, itemList, matchItems)  
         cnt = cnt + 1
         i = 0
         sys.stdout.write("Done: #" + str(cnt) + " " + str(i) + " seconds\r")
